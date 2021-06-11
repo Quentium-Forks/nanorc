@@ -1,4 +1,4 @@
-syntax "Markdown" "\.(md|mkd|mkdn|markdown|mdx)$"
+syntax "Markdown" "\.(md|mkd|mkdn|mdown|markdown|mdx)$"
 
 # @tag +tag #tag
 color brightgreen "\+{1}[a-zA-Z0-9_!:\-\.]*"
