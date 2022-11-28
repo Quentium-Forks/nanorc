@@ -15,7 +15,7 @@
   github: invisiblek
 - name: Birger Jarl
   email: codefuhrer@gmail.com
-  num_commits: 3
+  num_commits: 4
   first_commit: 2018-11-03 17:42:42
   github: ingria
 - name: Marcus Willock
@@ -259,7 +259,7 @@
   - me@msfjarvis.dev
 - name: DesertPunk
   email: 38014530+DesertPunk@users.noreply.github.com
-  num_commits: 2
+  num_commits: 3
   first_commit: 2019-04-07 11:05:34
   github: DesertPunk
 - name: floomby
@@ -337,7 +337,7 @@
   github: TJProgrammer
 - name: Anthony Scopatz
   email: scopatz@gmail.com
-  num_commits: 52
+  num_commits: 53
   first_commit: 2010-07-28 18:15:43
   github: astronautlevel
 - name: PhilipRoman
@@ -558,12 +558,12 @@
   email: zdecook@ccel.org
   alternate_emails:
   - zachdecook@librem.one
-  num_commits: 10
+  num_commits: 13
   first_commit: 2019-12-18 09:34:49
   github: earboxer
 - name: Gareth Jones
   email: Jones258@Gmail.com
-  num_commits: 11
+  num_commits: 12
   first_commit: 2019-11-01 23:57:35
 - name: Dante Falzone
   email: 48266179+DanteFalzone0@users.noreply.github.com
@@ -632,7 +632,7 @@
   github: Betlista
 - name: davidhcefx
   email: davidhu0903ex3@gmail.com
-  num_commits: 3
+  num_commits: 7
   first_commit: 2020-08-30 21:21:54
   github: davidhcefx
 - name: Mlendea, Horațiu
@@ -642,7 +642,7 @@
   github: hmlendea
 - name: Exonorid
   email: exonorid@gmail.com
-  num_commits: 1
+  num_commits: 3
   first_commit: 2020-10-02 02:46:00
   github: Exonorid
 - name: yzzyx
@@ -651,6 +651,7 @@
   - yzzyx@cock.li
   num_commits: 3
   first_commit: 2020-04-24 09:22:09
+  github: scopatz
 - name: Aiden Gall
   email: aidentvgall@gmail.com
   num_commits: 1
@@ -675,3 +676,93 @@
   num_commits: 1
   first_commit: 2020-10-07 11:30:35
   github: Fedict
+- name: Anders Eknert
+  email: anders@eknert.com
+  num_commits: 1
+  first_commit: 2020-12-17 09:42:22
+  github: anderseknert
+- name: Bruce DuPlanty
+  email: bduplanty@gmail.com
+  num_commits: 1
+  first_commit: 2021-03-30 00:12:15
+- name: miku86
+  email: git@miku86.com
+  num_commits: 1
+  first_commit: 2020-11-19 16:49:48
+  github: miku86
+- name: ak
+  email: a@k
+  num_commits: 2
+  first_commit: 2022-05-20 18:10:48
+- name: Dennis Rardin
+  email: dennis@rardin.net
+  num_commits: 1
+  first_commit: 2021-04-03 10:59:24
+- name: '0x07CB'
+  email: 83157348+0x07CB@users.noreply.github.com
+  num_commits: 1
+  first_commit: 2022-06-22 01:17:33
+- name: Sven Wick
+  email: sven.wick@gmx.de
+  num_commits: 1
+  first_commit: 2021-08-26 21:45:51
+- name: Tymoteusz Wołodźko
+  email: twolodzko+git@gmail.com
+  num_commits: 1
+  first_commit: 2021-02-13 11:23:31
+- name: Samantaz Fox
+  email: coding@samantaz.fr
+  num_commits: 1
+  first_commit: 2021-10-05 15:30:34
+- name: QuentiumYT
+  email: quentin.lienhardt@gmail.com
+  num_commits: 4
+  first_commit: 2022-11-22 10:59:46
+- name: Will Stott
+  email: willstott101@gmail.com
+  num_commits: 1
+  first_commit: 2021-07-06 17:19:53
+- name: Michael Vorburger ⛑️
+  email: mike@vorburger.ch
+  num_commits: 1
+  first_commit: 2022-07-04 00:42:45
+- name: Mike Foden
+  email: mike@mikefoden.com
+  num_commits: 1
+  first_commit: 2021-01-04 03:48:17
+- name: Jip
+  email: jhp.moors@gmail.com
+  num_commits: 1
+  first_commit: 2020-11-21 23:28:55
+  github: moorscode
+- name: bravoman
+  email: bravoman@me.com
+  num_commits: 2
+  first_commit: 2022-01-03 14:18:52
+- name: Richard Fleming
+  email: richardfleming@users.noreply.github.com
+  num_commits: 1
+  first_commit: 2018-10-11 06:24:41
+- name: Francine Guimarães
+  email: francinesguimaraes@outlook.com
+  num_commits: 1
+  first_commit: 2021-05-28 06:12:06
+- name: AlphaJack
+  email: alphajack@tuta.io
+  num_commits: 1
+  first_commit: 2020-12-24 21:42:56
+- name: palto42
+  email: palto@mailbox.org
+  num_commits: 2
+  first_commit: 2020-11-08 08:59:58
+  github: palto42
+- name: Yash-Singh1
+  email: saiansh2525@gmail.com
+  aliases:
+  - Yash Singh
+  num_commits: 1
+  first_commit: 2021-06-10 04:45:22
+- name: Vasili Novikov
+  email: vasya.novikov+cm3513git@gmail.com
+  num_commits: 1
+  first_commit: 2021-03-26 08:26:21

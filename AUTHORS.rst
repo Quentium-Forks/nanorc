@@ -5,34 +5,37 @@ Authors are sorted by number of commits.
 * Elof
 * Simon Volpert
 * Harsh Shandilya
-* Andrea Dejan Grande
-* Alex Taber
-* Gareth Jones
 * Zach DeCook
+* Andrea Dejan Grande
+* Gareth Jones
+* Alex Taber
 * Mariusz Smykuła
 * Dante Falzone
 * Michael Straube
 * CoffeeTableEnnui
+* davidhcefx
 * Daniel Kaplun
 * Philipp
 * Tiago Almeida
 * yochem
+* Birger Jarl
 * nl6720
 * Thomas Rosenau
 * Matthew Cox
 * Ritiek Malhotra
 * hdquemada
-* Birger Jarl
+* QuentiumYT
 * divinity76
 * CirKu17
 * Geoffrey McClinsey
 * Sandro Jäckel
+* DesertPunk
 * Philipp Leo Dylong
 * Huub de Beer
 * Mikael O. Bonnier
 * Jeppe Fihl-Pearson
 * Ondřej Ešler
-* davidhcefx
+* Exonorid
 * yzzyx
 * Dan Kaplun
 * Aryan Ebrahimpour
@@ -40,7 +43,6 @@ Authors are sorted by number of commits.
 * Jody Leonard
 * Daniel Jones
 * Brandon Gulla
-* DesertPunk
 * Shmueli Englard
 * Ondrej Esler
 * jboero
@@ -58,6 +60,9 @@ Authors are sorted by number of commits.
 * Paulo S. Costa
 * Mlendea, Horațiu
 * Ryan Westlund
+* ak
+* bravoman
+* palto42
 * Dan Pasanen
 * Marcus Willock
 * Dario Ostuni
@@ -129,8 +134,24 @@ Authors are sorted by number of commits.
 * Justin P
 * czechuuu
 * msuska
-* Exonorid
 * Aiden Gall
 * Rashil Gandhi
 * Serhiy Zahoriya
 * Bart Hanssens
+* Anders Eknert
+* Bruce DuPlanty
+* miku86
+* Dennis Rardin
+* 0x07CB
+* Sven Wick
+* Tymoteusz Wołodźko
+* Samantaz Fox
+* Will Stott
+* Michael Vorburger ⛑️
+* Mike Foden
+* Jip
+* Richard Fleming
+* Francine Guimarães
+* AlphaJack
+* Yash-Singh1
+* Vasili Novikov
