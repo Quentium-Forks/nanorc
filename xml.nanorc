@@ -1,25 +1,26 @@
-## Here is an example for xml files.
-##
+## Syntax highlighting for XML files.
 
-syntax "XML" ".*\.([jrs]?html?|xml|sgml?|rng|vue|mei|musicxml)$"
+syntax xml "\.([jrsx]html?|jnlp|mml|pom|rng|sgml?|svg|w[as]dl|wsdd|xjb|xml|xs(d|lt?)|xul)$"
 header "<\?xml.*version=.*\?>"
 magic "(XML|SGML) (sub)?document"
 comment "<!--|-->"
 
-color white "^.+$"
-# Attributes
-color green  start="<" end=">"
-color brightgreen "=\"[^\"]*\""
-# Opening tags
-color brightcyan   "<[^/][^> ]*"
-color brightcyan   ">"
-# Closing tags
-color cyan "</[^> ]*>"
-# Self-closing part
-color cyan "/>"
-color yellow start="<!DOCTYPE" end="[/]?>"
-color yellow start="<!--" end="-->"
-color red    "&[^;]*;"
+# First the entire content of the tag (for the attributes):
+color green start="<" end=">"
 
-## Trailing spaces
-color ,green "[[:space:]]+$"
+# The angled brackets and the name of the tag:
+color cyan "<[^> ]+|/?>"
+
+# The strings inside the tag:
+color magenta ""[^"]*""
+
+# Prolog stuff:
+color #888 "<\?.+\?>|<!DOCTYPE[^>]+>|\]>"
+color #888 start="<!DOCTYPE[^>]*$" end="^[^<]*>"
+
+# Comments:
+color yellow start="<!--" end="-->"
+
+# Entities (custom and predefined):
+color pink "&[^; ]+;"
+color red "&(amp|apos|gt|lt|quot);"

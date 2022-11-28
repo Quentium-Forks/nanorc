@@ -1,13 +1,20 @@
-## Here is an example for css files.
-##
+## Syntax highlighting for CSS files.
 
-syntax "CSS" "\.(css|scss|less)$"
-color brightred     "."
-color brightyellow  start="\{" end="\}"
-color brightwhite   start=":" end="[;^\{]"
-color brightblue    ":active|:focus|:hover|:link|:visited|:link|:after|:before|$"
-color brightblue    start="\/\*" end="\*\/"
-color green         ";|:|\{|\}"
+syntax css "\.css$"
+comment "/*|*/"
 
-## Trailing spaces
-color ,green "[[:space:]]+$"
+# First make everything red:
+color brightred "."
+# Then everything between braces yellow:
+color brightyellow start="\{" end="\}"
+# Then everything after a colon white:
+color brightwhite start=":" end="([;^{]|$)"
+
+# Pseudo-classes:
+color brightcyan ":(active|checked|focus|hover|link|visited|after|before)\>"
+
+# Comments:
+color brightblue start="/\*" end="\*/"
+
+# Syntactic characters:
+color green ";|:|\{|\}"
