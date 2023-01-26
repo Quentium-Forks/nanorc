@@ -42,7 +42,7 @@
 
 ## Constantly display the cursor position in the statusbar.  Note that
 ## this overrides "quickblank".
-# set const
+set constantshow
 
 ## Use cut to end of line by default.
 # set cut
@@ -91,7 +91,7 @@ set historylog
 # set nonewlines
 
 ## Set the line numbers to be displayed in the left margin.
-set linenumbers
+# set linenumbers
 
 ## Don't wrap text at all.
 set nowrap
@@ -179,7 +179,6 @@ set tabstospaces
 ## Enable soft line wrapping (AKA full line display)
 # set softwrap
 
-
 ## Color setup
 ##
 ## Format:
@@ -233,4 +232,3 @@ set tabstospaces
 
 ## Set this if your backspace key sends delete most of the time (2.1.3+)
 # bind kdel backspace all
-
