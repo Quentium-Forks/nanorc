@@ -17,6 +17,12 @@ _fetch_sources() {
   rm /tmp/nanorc.zip
 }
 
+_move_sources() {
+  mkdir -p ~/.nano/
+
+  cp -r * ~/.nano/
+}
+
 _update_nanorc() {
   cat nanorc > "$NANORC_FILE"
 
@@ -38,15 +44,22 @@ case "$1" in
 -l | --lite)
   UPDATE_LITE=1
   ;;
+-s | --sources)
+  UPDATE_SOURCES=1
+  ;;
 -h | --help)
   echo "Install script for nanorc syntax highlights"
   echo "Call with -l or --lite to update .nanorc with secondary precedence to existing .nanorc includes"
+  echo "Call with -s or --sources update .nanorc with local sources from this repository"
   exit 0
   ;;
 esac
 
 if [ $UPDATE_LITE ]; then
   _update_nanorc_lite
+elif [ $UPDATE_SOURCES ]; then
+  _move_sources
+  _update_nanorc
 else
   _fetch_sources
   _update_nanorc
