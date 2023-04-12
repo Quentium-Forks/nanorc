@@ -3,7 +3,7 @@
 ## Copyright 2015 Luke Francl.
 ## Licensed under GPL version 3 or newer.
 
-syntax rust "\.(rlib|rs)$"
+syntax "Rust" "\.(rs|rlib)$"
 comment "//"
 
 # Function definitions

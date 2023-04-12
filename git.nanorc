@@ -50,7 +50,7 @@ color brightblack "^#[[:space:]]On branch"
 color ,green "[[:space:]]+$"
 
 # This syntax format is used for interactive rebasing
-syntax "git-rebase-todo" "git-rebase-todo"
+syntax "git-rebase-todo" "git-rebase-todo$"
 
 # Rebase commands
 color green       "^(e|edit) [0-9a-f]{7,40}"

@@ -1,6 +1,6 @@
 ## Syntax highlighting for C and C++ files.
 
-syntax c "\.([ch](pp|xx)?|C|cc|c\+\+|cu|H|hh|ii?)$"
+syntax "C" "\.(c(c|pp|xx|\+\+)?|C)$" "\.(h(h|pp|xx|\+\+)?|H)$" "\.i(i|xx)?$" "\.(def)$"
 header "-\*-.*\<C(\+\+)?((;|[[:blank:]]).*)?-\*-"
 magic "^(C|C\+\+) (source|program)"
 comment "//"
