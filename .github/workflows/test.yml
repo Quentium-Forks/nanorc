@@ -1,23 +1,27 @@
 name: test
+
 on:
   push:
-    branches: [master]
+    branches: [ main ]
   pull_request:
-    branches: [master]
+    branches: [ main ]
   workflow_dispatch:
 
 jobs:
   highlight:
+    name: Highlight
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@master
 
       - name: Install build dependencies
-        run: sudo apt-get install -y autoconf automake autopoint gcc gettext git groff make pkg-config texinfo libncurses5-dev
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y autoconf automake autopoint gcc gettext git groff make pkg-config texinfo libncurses5-dev
 
       - name: Clone and configure GNU nano
         run: |
-          git clone --depth 100 git://git.savannah.gnu.org/nano.git
+          git clone --depth 1 git://git.savannah.gnu.org/nano.git
           cd nano
           ./autogen.sh
           ./configure --prefix=/usr
@@ -34,6 +38,10 @@ jobs:
       - name: Test highlighting files
         run: |
           mkdir -p ~/.nano/
-          cp -al *.nanorc ~/.nano/
-          TERM=xterm timeout 1s nano --rcfile ./nanorc >/dev/null 2>error.txt || true
-          grep -v -e "Received SIGHUP or SIGTERM" -e "Too many errors from stdin" error.txt && false
+          cp -f ./*.nanorc ~/.nano/
+          cp nanorc ~/.nanorc
+          echo "" | TERM=xterm timeout 1s nano --rcfile ~/.nanorc >/dev/null 2>error.txt || true
+          if grep -v -e "Received SIGHUP or SIGTERM" -e "Too many errors from stdin" -e "Standard input is not a terminal" error.txt; then
+            exit 1
+          fi
+          echo "All seems good!"
