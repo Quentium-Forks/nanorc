@@ -632,7 +632,7 @@
   github: Betlista
 - name: davidhcefx
   email: davidhu0903ex3@gmail.com
-  num_commits: 7
+  num_commits: 9
   first_commit: 2020-08-30 21:21:54
   github: davidhcefx
 - name: Mlendea, Horațiu
@@ -716,7 +716,7 @@
   first_commit: 2021-10-05 15:30:34
 - name: QuentiumYT
   email: quentin.lienhardt@gmail.com
-  num_commits: 4
+  num_commits: 18
   first_commit: 2022-11-22 10:59:46
 - name: Will Stott
   email: willstott101@gmail.com
@@ -760,9 +760,17 @@
   email: saiansh2525@gmail.com
   aliases:
   - Yash Singh
-  num_commits: 1
+  num_commits: 2
   first_commit: 2021-06-10 04:45:22
 - name: Vasili Novikov
   email: vasya.novikov+cm3513git@gmail.com
   num_commits: 1
   first_commit: 2021-03-26 08:26:21
+- name: sulincix
+  email: aliriza.keskin@pardus.org.tr
+  num_commits: 1
+  first_commit: 2023-10-28 22:34:20
+- name: André
+  email: andre.peters@debinux.de
+  num_commits: 1
+  first_commit: 2022-12-21 09:24:31
