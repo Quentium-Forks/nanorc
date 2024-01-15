@@ -1,9 +1,11 @@
-## Here is an example nanorc for syntax highlighting in Zeek scripts. Edited the standard sh.nanorc to create this, and added in the regex described by Scott Runnels.
+## Syntax highlighting for Zeek scripts.
+
 ## For Scott's bro-mode.el, go to https://github.com/srunnels/bro-mode/blob/master/bro-mode.el
 
 syntax "zeek" "\.zeek$"
 magic "(POSIX|Bourne.*) shell script text"
 header "^#!.*/(ba|k|pdk)?sh[-0-9_]*"
+
 icolor brightgreen "^[0-9A-Z_]+\(\)"
 
 color cyan "(usec|msec|sec|min|hr|day)s?\b"
@@ -25,14 +27,14 @@ color yellow "(\w+?)::\b"
 # Operators
 color green "(:|\{|\}|\(|\)|\;|\]|\[|`|\\|\$|<|>|!|=|& |&&|\||\?|%|\+|\*|-\W| as |\^|~| not | in | is | !in | : |,)"
 
-# attributes
+# Attributes
 color brightgreen "\&(expire_func|redef|priority|log|optional|default|add_func|delete_func|read_expire|write_expire|create_expire|on_change|raw_output|error_handler|type_column|deprecated)"
 
 # Directives and record references
 icolor brightred "(@\w+)"
 icolor red "(\w+?)\$\{?[0-9A-Z_!@#$*?-]+\}?"
 
-# string literals
+# String literals
 color brightyellow ""(\\.|[^"])*"" "'(\\.|[^'])*'"
 
 # Comments

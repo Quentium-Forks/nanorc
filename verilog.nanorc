@@ -66,10 +66,10 @@ icolor cyan "^[[:space:]]*`[0-9A-Z_]+"
 # I'm not sure what this line does... it was in c.nanorc.
 #color brightmagenta "'([^'\]|(\\["'abfnrtv\\]))'" "'\\(([0-3]?[0-7]{1,2}))'" "'\\x[0-9A-Fa-f]{1,2}'"
 
-# Strings.  In general you will want your strings and comments to come last,
+# Strings. In general you will want your strings and comments to come last,
 # because highlighting rules are applied in the order they are read in.
 color brightyellow ""([^"]|\\")*"" "<[^[:blank:]=]*>"
-# Multiline strings.  This regex is VERY resource intensive,
+# Multiline strings. This regex is VERY resource intensive,
 # and sometimes colours things that shouldn't be coloured.
 ###color brightyellow start=""(\\.|[^"])*\\[[:space:]]*$" end="^(\\.|[^"])*""
 

@@ -1,11 +1,13 @@
-## Here is an example for nanorc files.
-##
+## Syntax highlighting for configuration files.
+
 syntax "Conf" "\.c[o]?nf$"
-## Possible errors and parameters
+
 ## Strings
 icolor white ""(\\.|[^"])*""
+
 ## Comments
 icolor brightblue "^[[:space:]]*#.*$"
 icolor cyan "^[[:space:]]*##.*$"
+
 ## Trailing spaces
 color ,green "[[:space:]]+$"

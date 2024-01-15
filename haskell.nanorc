@@ -1,7 +1,7 @@
-## Syntax highlighting for Haskell files.
+## Syntax highlighting for Haskell.
 
-## Original author:  Alex Taber
-## License:  GPL version 3
+## Original author: Alex Taber
+## License: GPL version 3
 
 syntax "haskell" "\.hs$"
 comment "--"

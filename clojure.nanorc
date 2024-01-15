@@ -1,5 +1,4 @@
-## Clojure Syntax Highlighting
-##
+## Syntax highlighting for Clojure.
 
 syntax "clojure" "\.((clj[s|c]?)|edn)$"
 

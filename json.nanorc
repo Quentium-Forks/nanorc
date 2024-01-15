@@ -1,7 +1,7 @@
 ## Syntax highlighting for JSON files.
 
-## Original author:  Aapo Rantalainen
-## License:  GPL version 3 or newer
+## Original author: Aapo Rantalainen
+## License: GPL version 3 or newer
 
 syntax json "\.json$"
 # No comments are permitted in JSON.
@@ -9,12 +9,16 @@ comment ""
 
 # Numbers (used as value).
 color green ":[[:blank:]]*\-?(0|[1-9][0-9]*)(\.[0-9]+)?([Ee]?[-+]?[0-9]+)?"
+
 # Values (well, any string).
 color brightmagenta "".+""
+
 # Hex numbers (used as value).
 color green ":[[:blank:]]*"#[[:xdigit:]]+""
+
 # Escapes.
 color green "\\(["\/bfnrt]|u[[:xdigit:]]{4})"
+
 # Special words.
 color green "\<(true|false|null)\>"
 

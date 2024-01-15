@@ -1,5 +1,4 @@
-## SaltStack files (*.sls)
-##
+## Syntax highlighting for SaltStack state files
 
 syntax "Salt" "\.sls$"
 

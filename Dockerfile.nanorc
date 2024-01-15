@@ -1,4 +1,4 @@
-## Syntax highlighting for Dockerfiles
+## Syntax highlighting for Dockerfiles.
 syntax "Dockerfile" "Dockerfile[^/]*$" "\.dockerfile$"
 
 ## Keywords

@@ -1,12 +1,10 @@
 ## Syntax highlighting for YAML files.
 
-## Original author:  Benno Schulenberg
-## License:  GPL version 3 or newer
+## Original author: Benno Schulenberg
+## License: GPL version 3 or newer
 
 syntax yaml "\.ya?ml$"
 header "^%YAML |^---( |$)"
-
-tabgives "  "
 comment "#"
 
 # Keys:

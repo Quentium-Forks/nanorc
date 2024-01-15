@@ -8,6 +8,7 @@ formatter tidy -m -q
 
 # Tags:
 color cyan "<[[:alpha:]/!?][^>]*>"
+
 # Bold, italic, and underlined:
 color brightmagenta "</?[biu]>"
 

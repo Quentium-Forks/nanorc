@@ -1,26 +1,27 @@
-## Syntax highlighting for Jrnl/Markdown files.
+## Syntax highlighting for Jrnl files.
 
-## Original authors:  Ryan Westlund and Benno Schulenberg
-## Copied Markdown and Modified for jrnl.sh:  Bruce DuPlanty
-## License:  GPL version 3 or newer
+## Original authors: Ryan Westlund and Benno Schulenberg
+## Copied Markdown and Modified for jrnl.sh: Bruce DuPlanty
+## License: GPL version 3 or newer
 
 syntax "jrnl" "\.(jrnl)$"
+
 # @tag +tag #tag
 color brightgreen "\+{1}[a-zA-Z0-9_!:\-\.]*"
 color brightgreen "@{1}[a-zA-Z0-9_!:\-\.]*"
 color brightred "#{1}[a-zA-Z0-9_!:\-\.]*"
 
-# Tables (Github extension)
+# tables (Github extension)
 color cyan ".*[ :]\|[ :].*"
 
 # quotes
-color brightblack  start="^>" end="^$"
-color brightblack  "^>.*"
+color brightblack start="^>" end="^$"
+color brightblack "^>.*"
 
-# Emphasis
+# emphasis
 color green "(^|[[:space:]])(_[^ ][^_]*_|\*[^ ][^*]*\*)"
 
-# Strong emphasis
+# strong emphasis
 color brightgreen "(^|[[:space:]])(__[^ ][^_]*__|\*\*[^ ][^*]*\*\*)"
 
 # strike-through
@@ -30,17 +31,17 @@ color red "(^|[[:space:]])~~[^ ][^~]*~~"
 color brightmagenta "^(---+|===+|___+|\*\*\*+)\s*$"
 
 # headlines
-# for jrnl files whhere MD Headings maty be embedded
+# for jrnl files where MD Headings maty be embedded
 color brightwhite "#{1,6} .*"
 
 # lists
-color brightblue   "^[[:space:]]*[\*+-] |^[[:space:]]*[0-9]+\. "
+color brightblue "^[[:space:]]*[\*+-] |^[[:space:]]*[0-9]+\. "
 
 # leading whitespace
-color black    "^[[:space:]]+"
+color black "^[[:space:]]+"
 
 # misc
-color magenta   "\(([CcRr]|[Tt][Mm])\)" "\.{3}" "(^|[[:space:]])\-\-($|[[:space:]])"
+color magenta "\(([CcRr]|[Tt][Mm])\)" "\.{3}" "(^|[[:space:]])\-\-($|[[:space:]])"
 
 # links
 color brightblue "\[[^]]+\]"
@@ -53,11 +54,11 @@ color magenta "!\[[^][]*\](\([^)]+\)|\[[^]]+\])"
 color brightyellow "https?://[^ )>]+"
 
 # code
-color yellow   "`[^`]*`|^ {4}[^-+*].*"
+color yellow "`[^`]*`|^ {4}[^-+*].*"
 
 # code blocks
 color yellow start="^```[^$]" end="^```$"
 color yellow "^```$"
 
-# Trailing spaces
+# trailing spaces
 color ,green "[[:space:]]+$"

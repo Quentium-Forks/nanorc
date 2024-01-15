@@ -1,7 +1,5 @@
-##
-## Syntax highlighting for conkyrc files.
-##
-##
+## Syntax highlighting for Conky configuration files
+
 syntax "Conky" "(\.*conkyrc.*|conky.conf)$"
 
 ## Configuration items

@@ -1,7 +1,6 @@
-## syntax for gophernicus gophermaps
+## Syntax highlighting for gophermaps in gophernicus
 
 syntax gophermap "\.(gophermap|gph)$"
-
 
 # Port Numbers
 color yellow "^.[ -~]*.[ -~]*.[ -~]*.[ -~]+"
@@ -23,9 +22,6 @@ color brightyellow "^1[ -~]+.$"
 
 # URLs
 color brightcyan "URL:.*"
-
-
-# Types
 
 # General
 color magenta "^."

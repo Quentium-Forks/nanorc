@@ -1,5 +1,5 @@
-## Here is an example for Elixir.
-##
+## Syntax highlighting for Elixir.
+
 syntax "Elixir" "\.ex$" "\.exs$"
 header "^#!.*/(env +)?elixir( |$)"
 
@@ -24,12 +24,12 @@ color brightyellow "\<(__CALLER__|__DIR__|__ENV__|__MODULE__|__STACKTRACE__)\>"
 color brightyellow "\<(__add__|__aliases__|__build__|__block__|__deriving__|__info__|__protocol__|__struct__|__using__)\>"
 
 ## sigils
-color brightmagenta "~[a-z]\/([^\/])*\/[a-z]*" "~[a-z]\|([^\|])*\|[a-z]*" "~[a-z]\"([^\"])*\"[a-z]*" "~[a-z]\'([^\'])*\'[a-z]*" "~[a-z]\(([^\(\)])*\)[a-z]*" "~[a-z]\[([^\[\]])*\][a-z]*" "~[a-z]\{([^\{\}])*\}[a-z]*" "~[a-z]\<([^\<\>])*\>[a-z]*" 
+color brightmagenta "~[a-z]\/([^\/])*\/[a-z]*" "~[a-z]\|([^\|])*\|[a-z]*" "~[a-z]\"([^\"])*\"[a-z]*" "~[a-z]\'([^\'])*\'[a-z]*" "~[a-z]\(([^\(\)])*\)[a-z]*" "~[a-z]\[([^\[\]])*\][a-z]*" "~[a-z]\{([^\{\}])*\}[a-z]*" "~[a-z]\<([^\<\>])*\>[a-z]*"
 
 ## Strings, double-quoted
 color green ""([^"]|(\\"))*""
 
-## Expression substitution.  These go inside double-quoted strings,
+## Expression substitution. These go inside double-quoted strings,
 ## "like #{this}".
 color brightgreen "#\{[^}]*\}"
 

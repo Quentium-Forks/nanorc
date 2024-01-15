@@ -1,5 +1,5 @@
-## Here is an example for c-shell scripts.
-##
+## Syntax highlighting for CSH shell scripts.
+
 syntax "CSH" "\.csh$" "\.tcshrc$" "\.cshrc$" "\.login$" "\.logout$" "\.history$"
 header "^#!.*/(env +)?(t)?csh( |$)"
 

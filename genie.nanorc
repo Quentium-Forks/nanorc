@@ -1,4 +1,5 @@
-## Here is an example for Genie.
+## Syntax highlighting for Genie.
+
 syntax "genie" "\.gs$"
 
 # Namespace.

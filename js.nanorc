@@ -1,18 +1,6 @@
-### all *js files  ( e.g. Firefox user.js, prefs.js )
+## Syntax highlighting for JavaScript.
 
-## Old version
-
-#syntax "JavaScript" "(\.|/|)js$"
-#color green "//.*$" start="\/\*" end="\*\/"
-#color blue "'(\\.|[^'])*'"
-#color red ""(\\.|[^\"])*""
-#color brightgreen "\<(true)\>"
-#color brightred "\<(false)\>" "http\:\/\/.*$"
-#color brightmagenta "[0-9](\\.|[^\"])*)"
-
-## New updated taken from http://wiki.linuxhelp.net/index.php/Nano_Syntax_Highlighting
-
-syntax "JavaScript" "\.(js)$"
+syntax "JavaScript" "\.(js|mjs)$"
 header "^#!.*\/(env +)node"
 comment "//"
 

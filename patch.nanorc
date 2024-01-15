@@ -7,18 +7,23 @@ comment ""
 
 # Added lines.
 color brightgreen "^\+.*"
+
 # Show trailing whitespace only on added lines.
 color ,green "[[:space:]]+$"
+
 # Context lines.
 color brightblue "^ .*"
+
 # Deleted lines.
 color brightred "^-.*"
 
 # Header lines.
 color magenta "^(Index:|diff)[[:blank:]].*"
+
 # File names and dates.
 color red "^---.*"
 color green "^\+\+\+.*"
+
 # Line numbers.
 color brightyellow "^@@.*"
 

@@ -1,3 +1,5 @@
+## Syntax highlighting for YUM configuration files.
+
 syntax "YUM" "\.repo$|yum.*\.conf$"
 
 color cyan "^[[:space:]]*[^=]*="

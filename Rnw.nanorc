@@ -1,6 +1,7 @@
-## Here is a short example for TeX files.
-##
+## Syntax highlighting for Tex files.
+
 syntax "Tex" "\.Rnw$" "bib$" "\.bib$" "cls$" "\.cls$"
+
 color yellow "\$(\\\$|[^$])*[^\\]\$"
 color yellow "\$\$(\\\$|[^$])*[^\\]\$\$"
 icolor green "\\.|\\[A-Z]*"
@@ -20,20 +21,25 @@ color blue "([a-zA-Z0-9_\-$\.]*)\("
 
 # Variables
 color magenta "[a-zA-Z_0-9]* <\-"
+
 # Special Characters
 color yellow "[.,{}();]"
 color yellow "\["
 color yellow "\]"
 color yellow "[=][^>]"
+
 # Numbers
 color magenta "[+-]*([0-9]\.)*[0-9]+([eE][+-]?([0-9]\.)*[0-9])*"
 color magenta "0x[0-9a-zA-Z]*"
+
 # Special Variables
 color blue "(\$this|parent::|self::|\$this->)"
+
 # Bitwise Operations
 color magenta "(\;|\||\^){1}"
+
 # And/Or/SRO/etc
 color green "(\;\;|\|\||::|=>|->)"
-# STRINGS!
-color red "('[^']*')|(\"[^\"]*\")"
 
+# STRINGS
+color red "('[^']*')|(\"[^\"]*\")"

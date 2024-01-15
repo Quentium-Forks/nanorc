@@ -1,4 +1,4 @@
-## Here is a prolog example.
+## Syntax highlighting for Prolog.
 
 syntax "prolog" "\.pl$"
 comment "%"

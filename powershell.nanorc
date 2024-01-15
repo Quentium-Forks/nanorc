@@ -1,4 +1,4 @@
-## Nano syntax highlighting file for PowerShell
+## Syntax highlighting for PowerShell.
 
 syntax "PowerShell" "\.[pP][sS][1]$" "\.[pP][sS][mM][1]$"
 comment "# "
