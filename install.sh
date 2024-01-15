@@ -10,7 +10,7 @@ _fetch_repo() {
     wget -qO /tmp/nanorc.zip https://github.com/QuentiumYT/nanorc/archive/main.zip
     mkdir -p ~/.nano/
 
-    cd ~/.nano/
+    cd ~/.nano/ || exit
     unzip -qo /tmp/nanorc.zip
     mv nanorc-main/* ./
 
@@ -21,7 +21,7 @@ _fetch_repo() {
 _move_sources() {
     mkdir -p ~/.nano/
 
-    cp -f *.nanorc ~/.nano/
+    cp -f ./*.nanorc ~/.nano/
 }
 
 _reset_nanorc() {
@@ -56,9 +56,9 @@ case "$1" in
     ;;
 esac
 
-if [ $UPDATE_PATH ]; then
+if [ "$UPDATE_PATH" ]; then
     _update_nanorc_path
-elif [ $UPDATE_SOURCES ]; then
+elif [ "$UPDATE_SOURCES" ]; then
     _move_sources
     _reset_nanorc
 else
