@@ -1,8 +1,7 @@
 ## Syntax highlighting for Ada.
 
-## Original author:  Andreas K. Foerster
-## License:  GPL version 3 or newer
-
+## Original author: Andreas K. Foerster
+## License: GPL version 3 or newer
 ## Language reference: http://www.ada-auth.org/standards/12rm/html/RM-TTL.html
 
 syntax ada "\.ad[abcs]$"

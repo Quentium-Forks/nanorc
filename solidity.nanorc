@@ -1,8 +1,9 @@
-# manually created by referencing:
-#  -  https://github.com/solidityj/solidity-antlr4/blob/master/Solidity.g4
-#  - https://github.com/ConsenSysMesh/solidity-parser/blob/master/solidity.pegjs
-#  - https://docs.soliditylang.org/en/v0.4.24/units-and-global-variables.html
+## Syntax highlighting for Solidity.
 
+# manually created by referencing:
+# - https://github.com/solidityj/solidity-antlr4/blob/master/Solidity.g4
+# - https://github.com/ConsenSysMesh/solidity-parser/blob/master/solidity.pegjs
+# - https://docs.soliditylang.org/en/v0.4.24/units-and-global-variables.html
 
 syntax "solidity" "\.sol$"
 
@@ -24,18 +25,17 @@ color green "uint|uint8|uint16|uint24|uint32|uint40|uint48|uint56|uint64|uint72|
 color green "bytes|bytes1|bytes2|bytes3|bytes4|bytes5|bytes6|bytes7|bytes8|bytes9|bytes10|bytes11|bytes12|bytes13|bytes14|bytes15|bytes16|bytes17|bytes18|bytes19|bytes20|bytes21|bytes22|bytes23|bytes24|bytes25|bytes26|bytes27|bytes28|bytes29|bytes30|bytes31|bytes32"
 color green "fixed|ufixed|true|false|null"
 
-
 # Units
 icolor red "wei|szabo|finney|ether|seconds|days|minutes|hours|weeks|years"
 
 # Classes
 color cyan "function|class|contract|interface|library| is |as |returns|new|constructor|selfdestruct|extends|super|suicide"
 
-# bifs
+# Bifs
 color magenta "this|now|keccak256|(abi.(\w+\.)+?\w+)|blockhash|(block.(\w+\.)+?\w+)|require|(msg.(\w+\.)+?\w+)|(tx.(\w+\.)+?\w+)"
 color magenta "assert|revert|addmod|mulmod|sha256|sha3|ripemd160|ecrecover"
 
-# address functions
+# Address functions
 color yellow "0x\w+\.(balance|transfer|send|call|callcode|delegatecall)"
 color yellow "0x\w{64}"
 

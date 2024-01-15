@@ -1,3 +1,5 @@
+## Syntax highlighting for iCalendar files
+
 syntax "iCal" "\.ics$"
 
 color green start="^BEGIN:VCALENDAR$" end="^END:VCALENDAR$"
@@ -10,11 +12,14 @@ color brightcyan start="^BEGIN:VFREEBUSY$" end="^END:VFREEBUSY$"
 
 # URLs
 color blue start="(https?|ftp)://" end="^[^ ]"
+
 # email
 icolor blue "mailto:[^ ]+"
 icolor white "mailto:"
+
 # parameters
 color brightyellow start="^[-A-Z0-9]" end=":"
 color white "^[-A-Z0-9]+"
+
 # section markers
 color red "^(BEGIN|END):.*$"

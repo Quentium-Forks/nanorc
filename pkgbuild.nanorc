@@ -1,6 +1,7 @@
-## Arch PKGBUILD files
-##
+## Syntax highlighting for Arch Linux PKGBUILD files
+
 syntax "PKGBUILD" "^.*PKGBUILD$"
+
 color green start="^." end="$"
 color cyan "^.*(pkgbase|pkgname|epoch|pkgver|pkgrel|pkgdesc|arch|url|license).*=.*$"
 color brightcyan "\<(pkgbase|pkgname|epoch|pkgver|pkgrel|pkgdesc|arch|url|license)\>"

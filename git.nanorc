@@ -1,3 +1,5 @@
+## Syntax highlighting for gitconfig files.
+
 syntax "git-config" "git(config|modules)$|\.git/config$"
 
 color brightcyan "\<(true|false)\>"
@@ -14,7 +16,7 @@ color ,red "	+"
 # Copyright (c) 2010, Sebastian Staudt
 
 # A nano configuration file to enable syntax highlighting of some Git specific
-# files with the GNU nano text editor (http://www.nano-editor.org)
+# files with the GNU nano text editor (https://www.nano-editor.org/)
 #
 syntax "git-commit" "COMMIT_EDITMSG|TAG_EDITMSG"
 
@@ -31,11 +33,11 @@ color blue "#"
 color brightblue "[0-9a-f]{7,40}"
 
 # Files changes
-color white       "#[[:space:]](deleted|modified|new file|renamed):[[:space:]].*"
-color red         "#[[:space:]]deleted:"
-color green       "#[[:space:]]modified:"
+color white "#[[:space:]](deleted|modified|new file|renamed):[[:space:]].*"
+color red "#[[:space:]]deleted:"
+color green "#[[:space:]]modified:"
 color brightgreen "#[[:space:]]new file:"
-color brightblue  "#[[:space:]]renamed:"
+color brightblue "#[[:space:]]renamed:"
 
 # Untracked filenames
 color black "^#	[^/?*:;{}\\]+\.[^/?*:;{}\\]+$"
@@ -53,15 +55,15 @@ color ,green "[[:space:]]+$"
 syntax "git-rebase-todo" "git-rebase-todo$"
 
 # Rebase commands
-color green       "^(e|edit) [0-9a-f]{7,40}"
-color green       "^#  (e, edit)"
+color green "^(e|edit) [0-9a-f]{7,40}"
+color green "^# (e, edit)"
 color brightgreen "^(f|fixup) [0-9a-f]{7,40}"
-color brightgreen "^#  (f, fixup)"
+color brightgreen "^# (f, fixup)"
 color brightwhite "^(p|pick) [0-9a-f]{7,40}"
-color brightwhite "^#  (p, pick)"
-color blue        "^(r|reword) [0-9a-f]{7,40}"
-color blue        "^#  (r, reword)"
-color brightred   "^(s|squash) [0-9a-f]{7,40}"
-color brightred   "^#  (s, squash)"
-color yellow      "^(x|exec) [^ ]+ [0-9a-f]{7,40}"
-color yellow      "^#  (x, exec)"
+color brightwhite "^# (p, pick)"
+color blue "^(r|reword) [0-9a-f]{7,40}"
+color blue "^# (r, reword)"
+color brightred "^(s|squash) [0-9a-f]{7,40}"
+color brightred "^# (s, squash)"
+color yellow "^(x|exec) [^ ]+ [0-9a-f]{7,40}"
+color yellow "^# (x, exec)"

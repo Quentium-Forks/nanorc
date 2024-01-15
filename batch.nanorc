@@ -1,6 +1,6 @@
-## Here is an example for Batch file shell script.
+## Syntax highlighting for Batch file shell script.
 ## Author: davidhcefx (https://github.com/davidhcefx), based on Mitch Bumgarner's version.
-## License: MIT License
+## License: MIT
 
 syntax "batch" "\.(bat|cmd)$"
 header "^@[eE](cho|CHO) (on|off|ON|OFF)"
@@ -9,7 +9,7 @@ comment "::"
 # Native commands, symbols, and comparisons.
 icolor green "\<(ASSOC|CALL|CD|CLS|CMDEXTVERSION|COLOR|COPY|DATE|DEL|DIR|ECHO|ENDLOCAL|ERASE|ERRORLEVEL|EXIT|FOR|FTYPE|GOTO|IF|MD|MKLINK|MOVE|PATH|PAUSE|POPD|PROMPT|PUSHD|RD|REM|REN|SET|SETLOCAL|SHIFT|START|TIME|TITLE|TYPE|VER|VERIFY|VOL)\>"
 icolor green "\<(EQU|NEQ|LSS|LEQ|GTR|GEQ|DEFINED|EXIST|NOT)\>"
-color  green "[:|<>=&@\\^]"
+color green "[:|<>=&@\\^]"
 
 # Options.
 color brightmagenta "[[:blank:]]/[A-Za-z]+\>"

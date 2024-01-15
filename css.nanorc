@@ -5,8 +5,10 @@ comment "/*|*/"
 
 # First make everything red:
 color brightred "."
+
 # Then everything between braces yellow:
 color brightyellow start="\{" end="\}"
+
 # Then everything after a colon white:
 color brightwhite start=":" end="([;^{]|$)"
 

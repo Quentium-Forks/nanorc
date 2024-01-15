@@ -1,4 +1,4 @@
-## Sytax highlighting for nano and pico for X11-Basic. (c) Markus Hoffmann 2019
+## Syntax highlighting for nano and pico for X11-Basic. (c) Markus Hoffmann 2019
 
 # This file is part of X11-Basic, the basic interpreter for Unix/X
 # ======================================================================
@@ -7,8 +7,7 @@
 
 syntax "x11basic" "\.(bas|xbas|LST|BAS)$"
 
-# Variable names
-
+# variable names
 icolor brightwhite "\<[A-Z_][A-Za-z0-9_]*(|\$|\%|\&|\||\(\))\>"
 
 # system vars
@@ -19,14 +18,10 @@ icolor cyan "\<(PC|PI|ROWS|SP|STIMER|TIMER|TRUE)\>"
 # system string vars
 icolor cyan "\<(DATE|FILEEVENT|INKEY|TERMINALNAME|TIME|TRACE)\$"
 
-#special system vars
+# special system vars
 icolor cyan "\<(ANDROID|GPIO|GPS|SENSOR|WIN32|UNIX)\?"
 
-
-# system array vars
-
 # regular functions
-
 icolor green "\<(ABS|ACOS|ACOSH|ADD|AND|ARG|ARRPTR|ASC|ASIN|ASINH|ATAN|ATANH|ATN)\("
 icolor green "\<(BCHG|BCLR|BSET|BTST|BYTE)\("
 icolor green "\<(CALL|CALLD|CARD|CBRT|CEIL|COLOR_RGB|COMBIN|CONJ|COS|COSH|CRC|CVD|CVF|CVI|CVL|CVS)\("
@@ -54,11 +49,8 @@ icolor green "\<(XOR)\("
 icolor green "\<(DIM|EVENT|INP|TYP|VAL)\?\("
 
 # special functions
-
 icolor green "\<(INP)\%\("
 icolor green "\<(INP)\&\("
-
-
 
 # string functions
 icolor green "\<(ARID|ARIE)\$\("
@@ -81,14 +73,10 @@ icolor green "\<(UCASE|UNCOMPRESS|UNIXDATE|UNIXTIME|UPPER|USING)\$\("
 icolor green "\<(WORD)\$\("
 icolor green "\<(XTRIM)\$\("
 
-# array functions
-
+## array functions
 icolor green "\<(0|1|CONVOLUT|CVA|FFT|INV|SMUL|SOLVE|TRANS)\("
 
-
-
-# special commands
-
+## special commands
 icolor brightmagenta "(^|^[[:space:]]*)(DIM|LOCAL|LET)\>"
 icolor cyan "(^|^[[:space:]]*)DATA.*$"
 
@@ -99,9 +87,7 @@ icolor red "(^|^[[:space:]]*)(FUNCTION|PROCEDURE|DEFFN)\>"
 icolor blue "(^|^[[:space:]]*)(endselect|select|default|endif|else\ if|else|case|do|loop|next|for|if|while|wend|repeat|until|goto|gosub|spawn|void)\>"
 icolor brightred "(^|^[[:space:]]*)(END|QUIT|STOP|TRON|TROFF|ECHO|EDIT|NEW|RUN)\>"
 
-
-# regular commands
-
+## regular commands
 icolor brightgreen "(^|^[[:space:]]*)(ABSOLUTE|ADD|AFTER|ALERT|ARRAYCOPY|ARRAYFILL)\>"
 icolor brightgreen "(^|^[[:space:]]*)(BEEP|BELL|BGET|BLOAD|BMOVE|BOTTOMW|BOUNDARY|BOX|BPUT|BSAVE)\>"
 icolor brightgreen "(^|^[[:space:]]*)(CALL|CHAIN|CHDIR|CHMOD|CIRCLE|CLEAR|CLEARW|CLIP|CLOSE|CLOSEW|CLR|CLS|COLOR|CONNECT|COPYAREA|CURVE)\>"
@@ -126,19 +112,16 @@ icolor brightgreen "(^|^[[:space:]]*)(WATCH|WAVE|WORT_SEP)\>"
 icolor brightgreen "(^|^[[:space:]]*)(XLOAD|XRUN)\>"
 
 ## commands with a blank in it
-
 icolor brightblue "(^|^[[:space:]]*)(ON\ ERROR\ CONT)"
 icolor brightblue "(^|^[[:space:]]*)(ON\ BREAK\ CONT)"
 icolor brightred "(^|^[[:space:]]*)(ECHO\ (ON|OFF))"
-
 
 ## keywords
 icolor brightblue "\<(and|or|not|to|xor|not|then|step|var|tab|using)\>"
 
 ## operators
 color white "[+*=\^]" "<" ">" "/" "-"
-color brightred "[@\~]" 
-
+color brightred "[@\~]"
 
 ## number constants
 icolor brightyellow "\b(([1-9][0-9]+)|0+)\.[0-9]+j?\b" "\b([1-9][0-9]*[Lj]?)\b" "\b0o?[0-7]*L?\b" "\b0x[1-9a-f][0-9a-f]*L?\b" "\b0b[01]+\b"
@@ -147,22 +130,20 @@ icolor brightyellow "[\ ,\(]\#[1-9][0-9]*\b"
 ## parentheses
 color magenta "[(){}]" "\[" "\]"
 
-# labels
+## labels
 icolor red "(^|^[[:space:]]*)[^\ ^=.]*:"
 
-# Comments.
+## comments
 color yellow "(^|^[[:space:]]*)'.*$"
 icolor yellow "(^|^[[:space:]]*)REM.*$"
 color yellow "!.*$"
 
 icolor brightwhite,blue "(^|^[[:space:]]*)PROGRAM.*$"
 
-#shebang line
+## shebang line
 icolor brightwhite,green "^\#\!.*$"
 
-
-
-# Strings
+## strings
 color yellow "<[^= ]*>" ""(\\.|[^"])*""
 
 ## trailing spaces

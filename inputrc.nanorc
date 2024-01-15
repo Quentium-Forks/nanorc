@@ -1,10 +1,12 @@
+## Syntax highlighting for inputrc files.
+
 syntax "Inputrc" "inputrc$"
 
-color red   "\<(off|none)\>"
+color red "\<(off|none)\>"
 color green "\<on\>"
-color brightblue   "\<set|\$include\>"
+color brightblue "\<set|\$include\>"
 color yellow ""(\\.|[^"])*"|'(\\.|[^'])*'"
-color magenta     "\\.?"
+color magenta "\\.?"
 color brightblack "(^|[[:space:]])#([^{].*)?$"
 color ,green "[[:space:]]+$"
 color ,red "	+ +| +	+"

@@ -1,3 +1,5 @@
+## Syntax highlighting for the color test program.
+
 syntax "colorTest" "ColorTest$"
 
 color black "\<PLAIN\>"

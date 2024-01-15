@@ -1,4 +1,7 @@
+## Syntax highlighting for properties files.
+
 syntax "properties" "\.properties$"
+
 # property key
 icolor green "^[^:=]+[:=]"
 

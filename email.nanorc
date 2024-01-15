@@ -1,4 +1,4 @@
-## Syntax highlighting for emails.
+## Syntax highlighting for email files.
 
 syntax email "\.eml$"
 

@@ -1,3 +1,5 @@
+## Syntax highlighting for nmap output.
+
 syntax "NMAP" "\.nmap$"
 
 color yellow "^Nmap scan report for.*"

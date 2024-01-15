@@ -1,5 +1,6 @@
+## Syntax highlighting for Octave
 # Source: https://wiki.octave.org/Nano
-# Octave syntax colors
+
 syntax "octave" "\.m$" "\.octaverc$"
 
 # keywords

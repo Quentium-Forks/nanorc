@@ -1,3 +1,5 @@
+## Syntax highlighting for Groovy and Gradle files.
+
 syntax "groovy" "\.(groovy|gradle)$"
 
 # Keywords

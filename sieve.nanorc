@@ -1,4 +1,5 @@
-#syntax highlighting for the Sieve email filtering language
+## Syntax highlighting for Sieve email filtering language.
+
 #based on:
 #	RFC's		{ 3894,5173,5228,5229,5230,5231,5232,5233
 #			  	  5235,5260,5293,5435,5437,5463,5490,5703

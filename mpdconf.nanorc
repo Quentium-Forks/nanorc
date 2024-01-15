@@ -1,3 +1,5 @@
+## Syntax highlighting for MPD configuration files
+
 syntax "MPD" "mpd\.conf$"
 
 color cyan "\<(user|group|bind_to_address|host|port|plugin|name|type)\>"

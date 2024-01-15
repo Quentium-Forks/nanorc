@@ -1,4 +1,6 @@
-syntax "typescript" "\.(ts|typescript)$"
+## Syntax highlighting for TypeScript.
+
+syntax "typescript" "\.(ts|mts)$"
 header "^#!.*\/(env +)ts-node"
 
 ## Default

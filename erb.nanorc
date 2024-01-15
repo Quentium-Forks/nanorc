@@ -1,10 +1,11 @@
-## A HTML+Ruby set for Syntax Highlighting .erb files (Embedded RubyRails Views etc) ERB
+## Syntax highlighting for ERB (Embedded Ruby) files
+
 ## (c) 2009, Georgios V. Michalakidis - g.michalakidis@computer.org
 ## Licensed under the CC (Creative Commons) License.
-##
 ## https://github.com/geomic/ERB-And-More-Code-Highlighting-for-nano
 
 syntax "ERB" "\.erb$" "\.rhtml$"
+
 color blue start="<" end=">"
 color white start="<%" end="%>"
 color red "&[^;[[:space:]]]*;"

@@ -1,4 +1,4 @@
-## syntax highlighting for gemini:// markup language
+## Syntax highlighting for Gemini.
 
 syntax gemini "\.(gemini|gmi)$"
 
@@ -9,8 +9,10 @@ color brightmagenta "^###.*"
 
 # Link Text
 color brightred "^=>\s*\S+\s+.*"
+
 # Link URL
 color green "^=>\s*\S+"
+
 # Link Prefix
 color yellow "^=>"
 

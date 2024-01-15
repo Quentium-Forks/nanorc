@@ -1,5 +1,5 @@
-## SPARQL 1.1 and SPARQL 1.1 UPDATE
-#
+## Syntax highlighting for SPARQL queries.
+
 syntax "SPARQL" ".*\.(rq|sparql)$"
 
 icolor brightcyan "\<(ADD|AS|ASK)\>"
@@ -42,8 +42,6 @@ icolor brightmagenta "\<(UCASE|UUID)\>"
 icolor brightmagenta "\<(YEAR)\>"
 
 # variables, IRI
-#
 icolor cyan "\?\w+"
 icolor brightgreen "<.+:[^ >]+>"
 icolor green " \w+:"
-
