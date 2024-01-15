@@ -4,16 +4,17 @@ Authors are sorted by number of commits.
 * Anthony Scopatz
 * Elof
 * Simon Volpert
+* QuentiumYT
 * Harsh Shandilya
 * Zach DeCook
 * Andrea Dejan Grande
 * Gareth Jones
 * Alex Taber
+* davidhcefx
 * Mariusz Smykuła
 * Dante Falzone
 * Michael Straube
 * CoffeeTableEnnui
-* davidhcefx
 * Daniel Kaplun
 * Philipp
 * Tiago Almeida
@@ -24,7 +25,6 @@ Authors are sorted by number of commits.
 * Matthew Cox
 * Ritiek Malhotra
 * hdquemada
-* QuentiumYT
 * divinity76
 * CirKu17
 * Geoffrey McClinsey
@@ -63,6 +63,7 @@ Authors are sorted by number of commits.
 * ak
 * bravoman
 * palto42
+* Yash-Singh1
 * Dan Pasanen
 * Marcus Willock
 * Dario Ostuni
@@ -153,5 +154,6 @@ Authors are sorted by number of commits.
 * Richard Fleming
 * Francine Guimarães
 * AlphaJack
-* Yash-Singh1
 * Vasili Novikov
+* sulincix
+* André
