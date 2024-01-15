@@ -1,7 +1,7 @@
 # Improved Nano Syntax Highlighting Files
 
-[![shellcheck](https://github.com/scopatz/nanorc/actions/workflows/shellcheck.yml/badge.svg)](https://github.com/scopatz/nanorc/actions/workflows/shellcheck.yml)
-[![test](https://github.com/scopatz/nanorc/actions/workflows/test.yml/badge.svg)](https://github.com/scopatz/nanorc/actions/workflows/test.yml)
+[![shellcheck](https://github.com/QuentiumYT/nanorc/actions/workflows/shellcheck.yml/badge.svg)](https://github.com/QuentiumYT/nanorc/actions/workflows/shellcheck.yml)
+[![test](https://github.com/QuentiumYT/nanorc/actions/workflows/test.yml/badge.svg)](https://github.com/QuentiumYT/nanorc/actions/workflows/test.yml)
 
 This repository holds ``{lang}.nanorc`` files that have improved definitions of syntax highlighting for various languages.
 
@@ -14,13 +14,13 @@ There are three ways to install this repo.
 Copy the following code to download and run the installer script:
 
 ```sh
-curl https://raw.githubusercontent.com/scopatz/nanorc/master/install.sh | sh
+curl https://raw.githubusercontent.com/QuentiumYT/nanorc/master/install.sh | sh
 ```
 
 If your machine doesn't have `curl` command, use this code:
 
 ```sh
-wget https://raw.githubusercontent.com/scopatz/nanorc/master/install.sh -O- | sh
+wget https://raw.githubusercontent.com/QuentiumYT/nanorc/master/install.sh -O- | sh
 ```
 
 This automatically unpacks all the `.nanorc` files to `~/.nano`.
@@ -28,7 +28,7 @@ This automatically unpacks all the `.nanorc` files to `~/.nano`.
 #### Note
 
 Some syntax definitions which exist in Nano upstream may be preferable to the ones provided by this package.  
-The ` install.sh` script may be run with `-l` or `--lite` to insert the included syntax definitions from this package with *lower* precedence than the ones provided by the standard package.
+The `install.sh` script may be run with `-p` or `--path` to insert the included syntax definitions from this package with *lower* precedence than the ones provided by the standard package.
 
 ### 2. Package managers
 
@@ -51,12 +51,12 @@ For readability will use `$install_path` for the path of your choose (in *system
 
 For user, only run:
 
-`git clone git@github.com:scopatz/nanorc.git $install_path` or  
-`git clone https://github.com/scopatz/nanorc.git $install_path`
+`git clone git@github.com:QuentiumYT/nanorc.git $install_path` or  
+`git clone https://github.com/QuentiumYT/nanorc.git $install_path`
 
 For system wide, run:
 
-`sudo git clone https://github.com/scopatz/nanorc.git $install_path`
+`sudo git clone https://github.com/QuentiumYT/nanorc.git $install_path`
 
 ## Configuration
 
@@ -96,7 +96,7 @@ include "~/.nano/c.nanorc"
 `\<` and `\>` are regular character escapes on MacOS.  
 The bug is fixed in Nano, but this might be a problem if you are using an older version  
 If this is the case, replace them respectively with `[[:<:]]` and `[[:>:]]`.
-This is reported in [Issue 52](https://github.com/scopatz/nanorc/issues/52).
+This is reported in [Issue 52](https://github.com/QuentiumYT/nanorc/issues/52).
 
 ### Why not include the original files?
 
