@@ -1,13 +1,15 @@
 name: test
+
 on:
   push:
-    branches: [master]
+    branches: [ main ]
   pull_request:
-    branches: [master]
+    branches: [ main ]
   workflow_dispatch:
 
 jobs:
   highlight:
+    name: Highlight
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -35,5 +37,5 @@ jobs:
         run: |
           mkdir -p ~/.nano/
           cp -al *.nanorc ~/.nano/
-          TERM=xterm timeout 1s nano --rcfile ./nanorc >/dev/null 2>error.txt || true
+          TERM=xterm timeout 1s nano --rcfile .nanorc >/dev/null 2>error.txt || true
           grep -v -e "Received SIGHUP or SIGTERM" -e "Too many errors from stdin" error.txt && false
